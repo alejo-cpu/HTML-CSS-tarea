@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos</title>
+    <link rel="stylesheet" href="/css/presupuesto.css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <header>
+        <div class="div-logo">
+            <div class="logo"><a href="/index.html">AlejoCorona</a></div>
+            
+            <nav>
+                <a href="/index.html" id="boton1">Inicio</a>
+				<a href="/views/Productos.html" id="boton2">Productos</a>
+				<a href="/views/presupuesto.html" id="boton3">Presupuestos</a>
+				<a href="/views/contacto.html" id="boton4">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_MAIN_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <main>
+        <form>
+            <h2>Formulario</h2>
+            <input class="campos" type="text" name=nombre placeholder=" intruduzca su nombre" required>
+            <input class="campos" type="email" name=Email placeholder=" intruduzca su email" required>
+            <input class="campos" type="tel" name="telefono" placeholder=" intruduzca su numero de telefono" required>
+            <textarea rows="4" cols="49" placeholder="solicite mas informacion"></textarea>
+            <div id="terminos">
+                <input id=checkbox type="checkbox" name="checkbox" required>
+                <label for="checkbox">Acepto los <a href="">terminos y condiciones</a></label> 
+            </div>
+            <input id=enviar type="submit" name="submit" value="Enviar">
+        </form>
+    </main>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_FOOTER_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <footer>
+        <div>
+            <p class="footer-p" id="p1">© Todos los derechos reservados</p>
+            <p class="footer-p" id="p2">ACA VA A IR LA URL</p>
+        </div>
+
+        <ul class="redes">
+            <li class="redes-animation">
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </li> 
+            <li class="redes-animation"> 
+                <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li> 
+            <li class="redes-animation">
+                <a  href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="redes-animation">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration:none;
+
+}
+
+
+body{
+    min-height: 100vh;
+    max-width: 1300px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: sans-serif;
+    background-image: url(/assets/images/degradado.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+header {
+	width:100%;
+	overflow:hidden;
+	background:#181a1da4;
+	margin-bottom:8px;
+    border-radius: 0px 0px 7px 7px;
+    box-shadow: 2px 5px 15px rgb(0, 0, 0);
+}
+
+.div-logo {
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+
+header .logo {
+	font-size:50px;
+	line-height:90px;
+	float:left;
+}
+
+.logo a{
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.767);
+    position: relative;
+}
+
+header nav {
+	float:right;
+	line-height:100px;
+}
+
+header nav a {
+	display:inline-block;
+	color:rgba(255, 255, 255, 0.767);
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+#boton1{
+    border-left: 4px solid #1e65b6b4;
+}
+
+.logo a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #1e65b6b4;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+    text-decoration:underline #1e65b6b4;
+}
+
+.logo a:hover{
+    color:white;
+}
+
+header nav a:hover {
+	background:#1e65b6b4;
+	border-radius:30px;
+    color: #ffffff;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_MAIN_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+#slider{
+    height: clamp(480px,50vw,565px);
+    width: 100%;
+    overflow: hidden;
+    margin:0px auto 0;
+    border-radius: 7px;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+#slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 17s infinite alternate ease-in-out;
+}
+
+#slider li{
+
+    width: 100%;
+}
+
+#slider img{
+    width: 100%;
+    height: clamp(480px,50vw,565px);
+}
+
+@keyframes slide{
+    0%  {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+section h2{
+    border: solid 2px #18191c;
+    border-bottom: 0px;
+    padding: 7px 0;
+    text-align: center;
+    margin-top: 38px;
+    background-color: #18191c65;
+    border-radius:7px 7px 0px 0px;
+    color:rgba(255, 255, 255, 0.861);
+  }
+
+#relojes{
+    display:flex;
+    background-color: #18191c65;
+    border-radius:0px 0px 7px 7px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#relojes div{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+#relojes div img{
+    width: 100%;
+    margin-bottom: 10px ;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px;
+    transform-origin: top right;
+    transition: all 200ms ease-in-out;
+}
+
+#relojes div img:hover{
+    transform: rotate(-2deg);
+    border-radius: 0px;
+    box-shadow: 4px 4px 4px;
+}
+
+#relojes div a{
+    color:rgba(255, 255, 255, 0.861);
+    text-align: center;
+    border:solid;
+    border-radius: 14px;
+    padding: 15px;
+    text-wrap: nowrap;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: all 150ms;
+}
+
+#relojes div a:hover{
+    color: #1e65b6;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 4px black;
+}
+
+  #marcas{
+    display:flex;
+    background-color: #18191c65;
+    border-radius:0px 0px 7px 7px;
+    flex-direction: row;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 18px;
+  }
+  
+  .columnas{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #columna5{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .columnas a{
+    padding: 15px;
+    margin:6px;
+    color:rgba(255, 255, 255, 0.767);
+    background:#181a1da4;
+    border-radius:7px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin-bottom: 15px;
+    transition: all 300ms;
+  }
+
+  .columnas a:hover{
+    color:#1e65b6;
+    transform:translate(-4px, -4px);
+    background:#181a1dcd;
+    box-shadow: 5px 5px 9px rgb(0, 0, 0);
+  }
+  
+  #columna5 a{
+    padding: 15px;
+    margin:6px;
+    color:rgba(255, 255, 255, 0.767);
+    background:#181a1da4;
+    border-radius:7px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin-bottom: 15px;
+    transition: all 250ms;
+  }
+
+  #columna5 a:hover{
+    color:#1e65b6;
+    transform:translate(-4px, -4px);
+    background:#181a1dcd;
+    box-shadow: 5px 5px 9px rgb(0, 0, 0);
+  }
+
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_FOOTER_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+footer{
+    background:#18191c;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 20px;
+    border-radius: 7px 7px 7px 7px;
+    position: relative;
+    box-shadow: 6px 0px 10px rgb(0, 0, 0);
+}
+
+footer div{
+    color:rgba(255, 255, 255, 0.767);
+}
+
+#p1{ font-size: 15px; margin-top: 10px;}
+#p2{font-size: 16px;}
+
+.redes{
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 5px;
+    right: 0;
+}
+
+.redes a{
+    display:inline-block;
+    color:rgba(255, 255, 255, 0.767);
+    padding:10px 10px 10px 10px;
+    font-size:20px;
+    transform: translateY(-3px);
+    -webkit-transition:all 250ms ease-in-out;
+    -o-transition:all 250ms ease-in-out;
+    transition:all 250ms ease-in-out;
+}
+
+.redes-animation:hover a{
+    background:#1e65b6b4;
+	border-radius:30px;
+    color: #ffffff;
+    font-size: 25px;
+    transform: translateY(-13px);
+}
+
+@media screen and (max-width: 915px) {
+
+    header{
+        margin-bottom: 1%;
+    }
+
+    header nav{
+            margin-top: 1%;
+    }
+
+    header .logo{
+        font-size:clamp(30px,5.5vw,37px);
+        margin-top: 7px;
+    }
+
+    header nav a{
+        font-size:clamp(1px,3vw,20px);
+        padding:5px 8px;
+        margin-bottom: 6px;
+    }
+  
+    header .logo,
+	header nav {
+		width:100%;
+		text-align:center;
+		line-height:30px;
+	}
+    
+    #relojes div{
+        max-width: 350px;
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+    }    
+
+     #relojes div a{
+        padding: 13px;
+        font-size: 16px;        
+    }
+
+    #marcas{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #columna5{
+        flex-direction: row;
+    }
+
+    #columna5 a{
+        width: 45%;
+    }
+    
+    .columnas{
+        width: 49%;
+    }
+
+  
+   
+    
+
+
+    footer{
+        margin-top: 0.5%;
+        height: clamp(10px,22vw,100px);
+    }
+
+    #slider{
+        height: clamp(495px,50vw,565px);
+        width: 100%;
+    }
+
+
+    #slider img{
+            width: 110%;
+            height: clamp(495px,50vw,565px);
+
+    }
+
+
+    .redes a{
+        padding:7px 7px 7px 7px;
+        font-size: clamp( 14px, 4vw, 20px);
+    }
+
+}
+
