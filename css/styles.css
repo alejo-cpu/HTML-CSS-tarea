@@ -3,7 +3,6 @@
     margin: 0 auto;
     list-style: none;
     text-decoration:none;
-
 }
 
 
@@ -18,7 +17,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 /*_-_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
@@ -374,11 +372,6 @@ footer div{
         width: 49%;
     }
 
-  
-   
-    
-
-
     footer{
         margin-top: 0.5%;
         height: clamp(10px,22vw,100px);
@@ -393,9 +386,7 @@ footer div{
     #slider img{
             width: 110%;
             height: clamp(495px,50vw,565px);
-
     }
-
 
     .redes a{
         padding:7px 7px 7px 7px;
@@ -403,4 +394,3 @@ footer div{
     }
 
 }
-

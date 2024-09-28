@@ -3,9 +3,7 @@
     margin: 0 auto;
     list-style: none;
     text-decoration:none;
-
 }
-
 
 body{
     min-height: 100vh;
@@ -18,7 +16,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 /*_-_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
@@ -333,6 +330,3 @@ footer div{
     }
 
 }
-
-
-    
